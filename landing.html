@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Jogo da Velha</h1>
+        <nav>
+            <button class="btn-login" onclick="showLogin()">Login</button>
+            <button class="btn-jogo" onclick="goToGame()">Jogar</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="explicacao">
+            <h2>O que é o Jogo da Velha?</h2>
+            <p>O Jogo da Velha, também conhecido como Tic-Tac-Toe, é um jogo simples de dois jogadores. Eles se alternam para marcar espaços em uma grade 3x3, tentando ser o primeiro a alinhar três símbolos (X ou O) em uma linha, coluna ou diagonal.</p>
+        </section>
+
+        <button class="btn-jogar-anonimo" onclick="goToGame()">Jogar Anônimo</button>
+
+        <!-- Popup de Login (inicialmente oculto) -->
+        <div class="popup" id="login-popup">
+            <div class="popup-content">
+                <h2>Login</h2>
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" placeholder="Digite seu nome">
+                <button onclick="login()">Entrar</button>
+                <button onclick="closeLogin()">Fechar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Jogo da Velha. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="landing.js"></script>
+</body>
+</html>
